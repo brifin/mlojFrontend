@@ -12,6 +12,7 @@ window.onload = function(){
         warn_text.innerHTML = "请先前往 <a href='https://lab.glimmer.org.cn/auth' target='_blank'>https://lab.glimmer.org.cn/auth</a> 登录"
     }else{
         showRank()
+        warn_text.innerText = ''
     }
 }
 
@@ -22,6 +23,7 @@ window.document.onvisibilitychange = function () {
             warn_text.innerHTML = "请先前往 <a href='https://lab.glimmer.org.cn/auth' target='_blank'>https://lab.glimmer.org.cn/auth</a> 登录"
         }else{
             showRank()
+            warn_text.innerText = ''
         }
     }
 }
