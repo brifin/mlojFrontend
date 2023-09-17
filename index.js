@@ -1,4 +1,4 @@
-const userIdentifier = getCookie();
+let userIdentifier
 
 let zipFile
 const warn_text = document.getElementById('warning')
@@ -7,6 +7,7 @@ const fileBox = document.getElementById('file_box')
 let trlist = document.getElementsByTagName('tr')
 
 window.onload = function(){
+    userIdentifier = getCookie();
     if(!userIdentifier){
         warn_text.innerHTML = "请先前往 <a href='https://lab.glimmer.org.cn/auth' target='_blank'>https://lab.glimmer.org.cn/auth</a> 登录"
     }else{
@@ -15,6 +16,7 @@ window.onload = function(){
 }
 
 window.document.onvisibilitychange = function () {
+    userIdentifier = getCookie();
     if(window.document.visibilityState === 'visible'){
         if(!userIdentifier){
             warn_text.innerHTML = "请先前往 <a href='https://lab.glimmer.org.cn/auth' target='_blank'>https://lab.glimmer.org.cn/auth</a> 登录"
