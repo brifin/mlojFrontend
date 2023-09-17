@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测评</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (min-width: 960px) {
+            table {
+                width: 80%;
+            }
+
+            .upload {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            table {
+                width: 100%;
+            }
+
+            .upload {
+                width: 100%;
+            }
+        }
+
+        table {
+            margin: 0 auto;
+            line-height: 50px;
+            table-layout: auto;
+        }
+
+        .upload {
+            margin: 10px auto;
+        }
+
+        td {
+            border-top: 1px solid black;
+            text-align: center;
+        }
+
+        .final-line>td,
+        .first_line>td {
+            border-top: 2px solid black;
+        }
+
+        .header_line>th {
+            background-color: rgb(237, 125, 49);
+        }
+
+        .first_line>td {
+            background-color: rgb(244, 177, 131);
+        }
+
+        .second_line>td {
+            background-color: rgb(247, 203, 172);
+        }
+
+        .third_line>td {
+            background-color: rgb(251, 229, 213);
+        }
+
+        button {
+            margin: 0px;
+            padding: 8px;
+            border: 2px solid skyblue;
+            border-radius: 15px;
+            background-color: white;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="header_line">
+            <th>排名</th>
+            <th>昵称</th>
+            <th>准确率</th>
+            <th>测试速度/s</th>
+            <th>提交时间</th>
+        </tr>
+        <tr class="first_line">
+            <td>1</td>
+            <td>-----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr class="second_line">
+            <td>2</td>
+            <td>-----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr class="third_line">
+            <td>3</td>
+            <td>-----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>-----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>-----</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr class="final-line">
+            <td>---</td>
+            <td>我的最高排名</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+        <tr>
+            <td>---</td>
+            <td>上次提交结果</td>
+            <td>----</td>
+            <td>----</td>
+            <td>----/--/-- --:--</td>
+        </tr>
+    </table>
+    <hr>
+    <div class="upload">
+        <span>上传模型：</span>
+        <input type="file" id="file_box">
+        <button id="btn">提交</button>
+        &nbsp;<span style="color: red;" id="warning"></span>
+    </div>
+    <script type="text/javascript" src="./index_secert.js" async></script>
+</body>
+
+</html>
